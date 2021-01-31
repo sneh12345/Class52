@@ -1,0 +1,136 @@
+body{
+	font-family:Tahoma,Geneva,sans-serif;
+	font-weight:400;
+	
+	}
+
+.container{
+	min-width:100%;
+	min-height:100%;
+	display:block;
+	position:relative
+	}
+
+.menu{
+	width:40px;
+	height:40px;
+	display:block;
+	position:relative
+	}
+
+.list,.intro{
+	height:100%;
+	top:0;
+	display:flex;
+	position:fixed;
+	align-items:center;
+	flex-flow:column wrap;
+	justify-content:center;
+	z-index:-1;
+	transition:all .75s ease
+	}
+
+.list{
+	background:#26d07c;
+	width:120px;
+	left:-120px;
+	opacity:0
+	}
+
+.list span{
+	background:#fff;
+	width:100px;
+	margin:5px 0;
+	padding:10px 0;
+	text-align:center;
+	border-radius:4px
+	}
+
+.intro{
+	width:100%;
+	padding:0 8px;
+	left:0;
+	text-align:center
+	}
+
+.btn{
+	background:#000;
+	width:40px;
+	height:40px;
+	top:10px;
+	left:10px;
+	display:block;
+	position:absolute;
+	border-radius:50%
+	}
+
+.btn:before,
+.btn:after{
+	background:#fff;
+	width:20px;
+	height:2px;
+	left:10px;
+	display:block;
+	position:absolute;
+	content:"";
+	transition:all .75s ease
+	}
+	
+    .btn:before{top:16px}
+    .btn:after{bottom:16px}
+    
+    .menu:focus-within .list{left:0;opacity:1}
+    .menu:focus-within .intro{width:calc(100% - 120px);left:120px}
+    .menu:focus-within .btn:before{transform:rotate(45deg) translate(2px,2px)}
+    .menu:focus-within .btn:after{transform:rotate(-45deg) translate(2px,-2px)}
+
+
+
+    
+    p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 4px;
+        text-align: center;
+
+    }
+    
+    .img-container{
+  
+        border-radius: 10px 10px 1px;
+        text-align: center;
+       
+        
+
+    }
+   
+    ::selection{
+        background-color: blue;
+
+
+
+
+    }
+
+    body {
+        background: radial-gradient(600px at 50% 50% , #fff 20%, #000 100%);
+      }
+      h1 {
+        text-align: center;
+        font-family: 'Oswald', Helvetica, sans-serif;
+        font-size: 80px;
+        transform: skewY(-10deg);
+        letter-spacing: 4px;
+        word-spacing: -8px;
+        color: tomato;
+        text-shadow: 
+          -1px -1px 0 firebrick,
+          -2px -2px 0 firebrick,
+          -3px -3px 0 firebrick,
+          -4px -4px 0 firebrick,
+          -5px -5px 0 firebrick,
+          -6px -6px 0 firebrick,
+          -7px -7px 0 firebrick,
+          -8px -8px 0 firebrick,
+          -30px 20px 40px dimgrey
+      }
+
